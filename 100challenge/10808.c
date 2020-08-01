@@ -1,0 +1,125 @@
+#include<stdio.h>
+#include<string.h>
+
+int num[29];
+char a[109];
+int main()
+
+{
+	scanf("%s",a);
+	int i;
+	for(i=0;i<strlen(a);i++)
+	{
+		if(a[i]=='a')
+		{
+			num[1]+=1;
+		}
+		if(a[i]=='b')
+		{
+			num[2]+=1;
+		}
+		if(a[i]=='c')
+		{
+			num[3]+=1;
+		}
+		if(a[i]=='d')
+		{
+			num[4]+=1;
+		}
+		if(a[i]=='e')
+		{
+			num[5]+=1;
+		}
+		if(a[i]=='f')
+		{
+			num[6]+=1;
+		}
+		if(a[i]=='g')
+		{
+			num[7]+=1;
+		}
+		if(a[i]=='h')
+		{
+			num[8]+=1;
+		}
+		if(a[i]=='i')
+		{
+			num[9]+=1;
+		}
+		if(a[i]=='j')
+		{
+			num[10]+=1;
+		}
+		if(a[i]=='k')
+		{
+			num[11]+=1;
+		}
+		if(a[i]=='l')
+		{
+			num[12]+=1;
+		}
+		if(a[i]=='m')
+		{
+			num[13]+=1;
+		}
+		if(a[i]=='n')
+		{
+			num[14]+=1;
+		}
+		if(a[i]=='o')
+		{
+			num[15]+=1;
+		}
+		if(a[i]=='p')
+		{
+			num[16]+=1;
+		}
+		if(a[i]=='q')
+		{
+			num[17]+=1;
+		}
+		if(a[i]=='r')
+		{
+			num[18]+=1;
+		}
+		if(a[i]=='s')
+		{
+			num[19]+=1;
+		}
+		if(a[i]=='t')
+		{
+			num[20]+=1;
+		}
+		if(a[i]=='u')
+		{
+			num[21]+=1;
+		}
+		if(a[i]=='v')
+		{
+			num[22]+=1;
+		}
+		if(a[i]=='w')
+		{
+			num[23]+=1;
+		}
+		if(a[i]=='x')
+		{
+			num[24]+=1;
+		}
+		if(a[i]=='y')
+		{
+			num[25]+=1;
+		}
+		if(a[i]=='z')
+		{
+			num[26]+=1;
+		}
+	}
+	for(i=1;i<27;i++)
+	{
+		printf("%d ",num[i]);
+	}
+	
+	
+	return 0;
+}
