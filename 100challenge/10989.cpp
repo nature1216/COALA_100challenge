@@ -1,20 +1,23 @@
-#include <bits/stdc++.h>
+#include<iostream>
+
 using namespace std;
+
+int a[10001];
+
 int main()
 {
-	vector <int> arr;
-	int n;
-	scanf("%d", &n);
-	for(int i=0;i<n;i++)
+	int n,num,i,j;
+	scanf_s("%d", &n);
+	for (i = 0; i < n; i++)
 	{
-		int tmp;
-		scanf("%d", &tmp);
-		arr.push_back(tmp);//vector 입력 방식 
+		scanf_s("%d", &num);
+		a[num]++;
 	}
-	sort(arr.begin(), arr.end());
-	for(int i=0;i<n;i++)
-	{
-		printf("%d\n", arr[i]);
-	}
-	return 0;
+	for (i =1; i <= 10000; i++)
+		for (j = 0; j < a[i]; j++)
+			printf("%d ", i);
+	printf("\n");
+
+		
+	return 0; 
 }
