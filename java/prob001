@@ -1,0 +1,7 @@
+
+public class prob001 {
+
+	public static void main(String[] args) {
+		System.out.print("\"j\"\n\"a\"\n\"v\"\n\"a\"");
+	}
+}
