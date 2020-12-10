@@ -6,17 +6,16 @@ public class prob61 {
 		Scanner sc = new Scanner(System.in);
 		
 		String ip = sc.next();
-		int first = Integer.valueOf(ip.substring(0,3));
-		int second = Integer.valueOf(ip.substring(4,7));
-		int third = Integer.valueOf(ip.substring(8,11));
-		int fourth = Integer.valueOf(ip.substring(12,15));
-//		System.out.println(first);
-//		System.out.println(second);
-//		System.out.println(third);
-//		System.out.println(fourth);
-		if(first == 123 && second == 123 && third == 123)
+		String game[] = ip.split("\\.");
+		int add[] = new int[4];
+		for(int i=0;i<game.length;i++)
 		{
-			if(fourth <= 255 && fourth >=2 ) System.out.print("winable!");
+			add[i] = Integer.valueOf(game[i]);
+		}
+	//	for(int i=0;i<game.length;i++) System.out.println(game[i]);
+		if(add[0] == 123 && add[1] == 123 && add[2] ==123)
+		{
+			if(add[3] <= 255 && add[3] >=2 ) System.out.print("winable!");
 			else System.out.print("gg");
 		}
 		else System.out.print("gg");
