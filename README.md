@@ -1,4 +1,1 @@
-# COALA
-## #School Activity
-## #BOJ
-## #Algorithm
+### algorithm
